@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+</head>
+<body>
+    <h1>Hello {{ .Username }}</h1>
+
+    <p>Thanks for your substriction on {{ .AppName }}</p>
+    <p>To confirm your email please click on the link below !</p>
+    <a href="http://127.0.0.1:3000/email-verification/{{ .Token }}">click here</a>
+
+</body>
+</html>
